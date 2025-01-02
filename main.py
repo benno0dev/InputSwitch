@@ -12,7 +12,7 @@ def create_image(): # Draws the Icon
 
     return image
 
-Monitor = 1 # Change the Int to change the disired monitor (0 is probably always the main monitor)
+Monitor = 0 # Change the Int to change the disired monitor (0 is probably always the main monitor)
 
 def on_hdmi1():
     monitors = mc.get_monitors()
