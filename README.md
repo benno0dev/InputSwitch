@@ -45,6 +45,19 @@ It is recommended to run all this in a venv (If you dont know how, use the [vsco
 ## ⚙️ Config (only when running by source)
 ### Change Monitor
 Just change the variable "Monitor" to a different number (0 should be your main monitor)
+### Automatically use specific venv when executing the script
+- Add line like this at the start of the main.py file (when you dont want a console popping up (windows only))
+```python
+  #![link to your venv]\Scripts\pythonw.exe
+```
+- with console
+```python
+  #![link to your venv]\Scripts\python.exe
+```
+- it should look like this (".venv" is my venv name and the rest is the path to the folder with the files in it)
+```python
+  #!C:\Users\benni\Projects\Python\InputSwitch\.venv\Scripts\pythonw.exe
+```
 ### Add/Change an Input
 First add a MenuItem() Line to the "menu = Menu(...)" class, by copying an existing one and changing the names
 Second copy an existing function of an input and also here change the names of your desired source:
