@@ -1,18 +1,13 @@
+#!C:\Users\benni\Projects\Python\InputSwitch\.venv\Scripts\pythonw.exe
 from pystray import Icon, Menu, MenuItem
 from PIL import Image, ImageDraw
 import monitorcontrol as mc
 
 def create_image(): # Draws the Icon
-    width = 64
-    height = 64
-    image = Image.new('RGBA', (width, height), (255, 255, 255, 0))
-    draw = ImageDraw.Draw(image)
-
-    draw.ellipse((16, 16, 48, 48), fill='green')
-
+    image = Image.open("icon.png").convert("RGBA")
     return image
 
-Monitor = 1 # Change the Int to change the disired monitor (0 is probably always the main monitor)
+Monitor = 0 # Change the Int to change the disired monitor (0 is probably always the main monitor)
 
 def on_hdmi1():
     monitors = mc.get_monitors()
