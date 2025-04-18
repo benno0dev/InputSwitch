@@ -1,4 +1,3 @@
-#!C:\Users\benni\Projects\Python\InputSwitch\.venv\Scripts\pythonw.exe
 from pystray import Icon, Menu, MenuItem
 from PIL import Image, ImageDraw
 import monitorcontrol as mc
